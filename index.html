@@ -1,239 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Christian Rios - Web Developer portfolio">
+    <meta name="description" content="Christian Rios - Web Developer based in Panama City">
     <meta name="author" content="Christian Rios">
-    <title>Christian Rios</title>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YcnS/1p2JdCaDlMvBkEMn5bIELFU1TaeNj9" crossorigin="anonymous">
-
-    <!-- Font Awesome 6 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Favicon -->
+    <title>Christian Rios - Web Developer</title>
     <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+<body>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
-
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Christian Rios</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="#hero">CR</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Follow Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#books"><i class="fas fa-fw fa-book"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#playing"><i class="fas fa-fw fa-gamepad"></i></a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gaming">Gaming</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header>
+    <!-- Hero -->
+    <section id="hero">
         <div class="container">
-            <div class="row">
-                <div id="profilephoto" class="col-lg-12">
-                    <img id="whatever" class="img-fluid rounded-circle mx-auto d-block" src="img/profile.png"
-                        alt="Christian Rios" width="256" height="254">
-                    <div class="intro-text">
-                        <span class="name">Christian Rios</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - .NET Developer - Gamer</span>
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <p class="text-accent mb-2 fw-600">Hello, I'm</p>
+                    <h1 class="display-3 fw-bold mb-3">Christian Rios</h1>
+                    <p class="lead text-muted mb-4">Web Developer &middot; .NET Developer &middot; Gamer</p>
+                    <p class="fs-5 text-secondary mb-4">Based in Panama City, Panama. Building web applications with <script>document.write(new Date().getFullYear() - 2007)</script>+ years of experience.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#portfolio" class="btn btn-accent btn-lg px-4">View My Work</a>
+                        <a href="#connect" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+                    </div>
+                    <div class="social-links mt-5">
+                        <a href="https://github.com/carios23" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/Cristian0" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" id="profilephoto">
+                    <img id="whatever" src="img/profile.png" alt="Christian Rios" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <p class="fs-5">Strong <script>document.write(new Date().getFullYear() - 2007)</script> years of experience as a .NET Web Developer. Responsible for design and implementation of features, resolving defects, creating reports and technical documentation for web applications.</p>
+                    <p class="fs-5">Technical management of junior developers. I have been a key resource in several long-term, challenging and time critical projects. My high quality deliverables have secured follow up work from several clients.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-4">Skills & Technologies</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">.NET Framework</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">VB.NET</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">WCF</span>
+                        <span class="skill-tag">LINQ</span>
+                        <span class="skill-tag">Oracle DB</span>
+                        <span class="skill-tag">PL/SQL</span>
+                        <span class="skill-tag">SSRS</span>
+                        <span class="skill-tag">Crystal Reports</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-dark-alt">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
+            <h2 class="section-title">Portfolio</h2>
             <div class="row g-4">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-bs-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fas fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal1">
                         <img src="img/portfolio/cabin.png" class="img-fluid" alt="Gringo in Panama">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-bs-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fas fa-search-plus fa-3x"></i>
-                            </div>
+                        <div class="project-overlay">
+                            <h5>Gringo in Panama</h5>
+                            <p>Web Development</p>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal2">
                         <img src="img/portfolio/cake.png" class="img-fluid" alt="Windows Phone Apps">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-bs-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fas fa-search-plus fa-3x"></i>
-                            </div>
+                        <div class="project-overlay">
+                            <h5>Windows Phone Apps</h5>
+                            <p>Mobile Development</p>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-fluid" alt="My Personal Blog">
-                    </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img src="img/portfolio/circus.png" class="img-fluid" alt="Personal Blog">
+                        <div class="project-overlay">
+                            <h5>Personal Blog</h5>
+                            <p>Writing</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 offset-lg-2">
-                    <p>Strong <script>document.write(new Date().getFullYear() - 2007)</script> years of experience as a .NET Web Developer. Responsible for design and implementation of features, resolving defects, creating reports and technical documentation for web applications. Technical management of junior developers. I have been a key resource in several long-term, challenging and time critical projects. My high quality deliverables have secured follow up work from several clients.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I have substantial experience in web development using the .NET Framework, C#, VB.NET, WCF, LINQ, Silverlight, SQL Server 2005/2008/2012, and SQL Server Reporting Services. Other technical skills include C/C++, ASP.NET, JavaScript, Windows Phone, jQuery, Java, CSS, Oracle DB, PL/SQL, and Crystal Reports.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Books Section -->
+    <!-- Books -->
     <section id="books">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Favorite Books</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+            <h2 class="section-title"><i class="fas fa-book me-2"></i>Favorite Books</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0201835959&asins=0201835959&linkId=df1e10b4605eebf35c670a6286d785f2&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0321466756&asins=0321466756&linkId=7cefc1d1e048ce9a10eee5ed5a58ee55&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0451524934&asins=0451524934&linkId=dcb5f4e5bff2797cf3e2a7e0706d15ef&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0062315005&asins=0062315005&linkId=84c5118088ba11671d72ebc844c03cbd&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Currently Playing Section -->
-    <section class="success" id="playing">
+    <!-- Gaming -->
+    <section id="gaming" class="bg-dark-alt">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Currently Playing</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+            <h2 class="section-title"><i class="fas fa-gamepad me-2"></i>Currently Playing</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B00M3D8IYM&asins=B00M3D8IYM&linkId=6b6170640f67437aecc4b207a71ccec3&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B00GZ1GUSY&asins=B00GZ1GUSY&linkId=94062f599999968a9d7104a7e18438ee&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B06Y42G518&asins=B06Y42G518&linkId=037c3594fe374d71c8b1b34f4086e8fa&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
-                        frameborder="0"
+                <div class="col-6 col-md-3 text-center">
+                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
                         src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B01K63R7HY&asins=B01K63R7HY&linkId=88f86641bb9f2b73c9e25ec9df4908b1&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Connect -->
+    <section id="connect">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Follow Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <div class="mb-3">
-                        <a href="https://twitter.com/Cristian0" class="btn btn-outline-dark btn-lg" target="_blank" rel="noopener">
-                            <i class="fab fa-twitter"></i> Follow on Twitter
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="fs-5 text-muted mb-5">Find me on any of these platforms</p>
+                    <div class="d-flex justify-content-center gap-4 flex-wrap connect-links">
+                        <a href="https://github.com/carios23" target="_blank" rel="noopener" class="connect-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
                         </a>
-                    </div>
-                    <div class="mb-3">
-                        <a href="https://www.facebook.com/christianrioscartin" class="btn btn-outline-dark btn-lg" target="_blank" rel="noopener">
-                            <i class="fab fa-facebook"></i> Follow on Facebook
+                        <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener" class="connect-card">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
                         </a>
-                    </div>
-                    <div class="mb-3">
-                        <a href="https://www.youtube.com/@carios23" class="btn btn-outline-dark btn-lg" target="_blank" rel="noopener">
-                            <i class="fab fa-youtube"></i> Subscribe on YouTube
+                        <a href="https://twitter.com/Cristian0" target="_blank" rel="noopener" class="connect-card">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener" class="connect-card">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@carios23" target="_blank" rel="noopener" class="connect-card">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
                         </a>
                     </div>
                 </div>
@@ -242,124 +215,69 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Calle 50<br>Panama City, Panama</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/christianrioscartin" class="btn-social btn-outline" target="_blank" rel="noopener"><i class="fab fa-fw fa-facebook-f"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://twitter.com/Cristian0" class="btn-social btn-outline" target="_blank" rel="noopener"><i class="fab fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/christianrioscartin" class="btn-social btn-outline" target="_blank" rel="noopener"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://github.com/carios23" class="btn-social btn-outline" target="_blank" rel="noopener"><i class="fab fa-fw fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About</h3>
-                        <p>Personal portfolio site built with Bootstrap 5.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Christian Rios <script>document.write(new Date().getFullYear())</script>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">Calle 50, Panama City, Panama</p>
+            <p class="mb-0 text-muted">&copy; Christian Rios <script>document.write(new Date().getFullYear())</script></p>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <div class="scroll-top d-lg-none">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h2>Gringo in Panama</h2>
-                    <hr class="star-primary">
-                    <img src="img/portfolio/cabin.png" class="img-fluid mx-auto d-block mb-4" alt="Gringo in Panama">
-                    <p>A picture blog to showcase what is going on in Panama</p>
-                    <ul class="list-inline item-details">
-                        <li class="list-inline-item">Client: <strong><a href="https://www.gringoinpanama.com">Kim Cox</a></strong></li>
-                        <li class="list-inline-item">Date: <strong>April 2013</strong></li>
-                        <li class="list-inline-item">Service: <strong>Web Development</strong></li>
-                    </ul>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-body p-5 text-center">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+                    <img src="img/portfolio/cabin.png" class="img-fluid rounded mb-4" alt="Gringo in Panama">
+                    <h3 class="fw-bold">Gringo in Panama</h3>
+                    <p class="text-muted">A picture blog to showcase what is going on in Panama</p>
+                    <div class="d-flex justify-content-center gap-4 text-muted small">
+                        <span>Client: <strong class="text-light"><a href="https://www.gringoinpanama.com" class="text-accent">Kim Cox</a></strong></span>
+                        <span>Date: <strong class="text-light">April 2013</strong></span>
+                        <span>Service: <strong class="text-light">Web Development</strong></span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h2>Windows Phone Apps</h2>
-                    <hr class="star-primary">
-                    <img src="img/portfolio/cake.png" class="img-fluid mx-auto d-block mb-4" alt="Windows Phone Apps">
-                    <p>A collection of several Windows Phone apps that I have developed.</p>
-                    <ul class="list-inline item-details">
-                        <li class="list-inline-item">Client: <strong>WP Apps</strong></li>
-                        <li class="list-inline-item">Date: <strong>April 2014</strong></li>
-                        <li class="list-inline-item">Service: <strong>Windows Phone Development</strong></li>
-                    </ul>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-body p-5 text-center">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+                    <img src="img/portfolio/cake.png" class="img-fluid rounded mb-4" alt="Windows Phone Apps">
+                    <h3 class="fw-bold">Windows Phone Apps</h3>
+                    <p class="text-muted">A collection of several Windows Phone apps that I have developed.</p>
+                    <div class="d-flex justify-content-center gap-4 text-muted small">
+                        <span>Client: <strong class="text-light">WP Apps</strong></span>
+                        <span>Date: <strong class="text-light">April 2014</strong></span>
+                        <span>Service: <strong class="text-light">Mobile Development</strong></span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h2>My Personal Blog</h2>
-                    <hr class="star-primary">
-                    <img src="img/portfolio/circus.png" class="img-fluid mx-auto d-block mb-4" alt="My Personal Blog">
-                    <p>This is my personal blog where I reflect my opinions and contribute to the world of programming.</p>
-                    <ul class="list-inline item-details">
-                        <li class="list-inline-item">Client: <strong><a href="https://www.chrisrios.com">My Blog</a></strong></li>
-                        <li class="list-inline-item">Date: <strong>June 2009</strong></li>
-                        <li class="list-inline-item">Service: <strong>Writing</strong></li>
-                    </ul>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-body p-5 text-center">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+                    <img src="img/portfolio/circus.png" class="img-fluid rounded mb-4" alt="Personal Blog">
+                    <h3 class="fw-bold">My Personal Blog</h3>
+                    <p class="text-muted">This is my personal blog where I reflect my opinions and contribute to the world of programming.</p>
+                    <div class="d-flex justify-content-center gap-4 text-muted small">
+                        <span>Client: <strong class="text-light"><a href="https://www.chrisrios.com" class="text-accent">My Blog</a></strong></span>
+                        <span>Date: <strong class="text-light">June 2009</strong></span>
+                        <span>Service: <strong class="text-light">Writing</strong></span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <!-- Custom Theme JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/freelancer.js"></script>
 </body>
-
 </html>

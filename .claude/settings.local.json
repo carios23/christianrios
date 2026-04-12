@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(wc -l index.html css/*.css js/*.js)",
+      "Bash(ls -la /tmp/repo/*.md /tmp/repo/README*)",
+      "Bash(node -e ':*)",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(gh run:*)"
+    ]
+  }
+}
