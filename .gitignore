@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.sln
+*.csproj
+*.vbproj
+*.user
+*.suo
+Web.config
+bin/
+obj/
+App_Data/
+*.publishproj
+
+# Node
+node_modules/
+
+# Build artifacts
+css/freelancer.min.css
+js/freelancer.min.js
+
+# OS
+.ftpquota
