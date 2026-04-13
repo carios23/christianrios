@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Static Site (dotnet-serve)",
+      "runtimeExecutable": "dotnet",
+      "runtimeArgs": ["serve", "-p", "8000", "-d", "."],
+      "port": 8000
+    }
+  ]
+}

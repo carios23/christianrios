@@ -3,27 +3,88 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Christian Rios - Web Developer based in Panama City">
+
+    <!-- SEO Meta Tags -->
+    <title>Christian Rios | Senior .NET Web Developer in Panama City</title>
+    <meta name="description" content="Christian Rios is a senior .NET web developer based in Panama City, Panama with 18+ years of experience building web applications in C#, ASP.NET, SQL Server, and JavaScript.">
+    <meta name="keywords" content="Christian Rios, web developer, .NET developer, C#, ASP.NET, Panama City, Panama, software engineer, SQL Server, JavaScript">
     <meta name="author" content="Christian Rios">
-    <title>Christian Rios - Web Developer</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://christianrios.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christianrios.com/">
+    <meta property="og:title" content="Christian Rios | Senior .NET Web Developer in Panama City">
+    <meta property="og:description" content="Senior .NET web developer with 18+ years of experience building web applications. Based in Panama City, Panama.">
+    <meta property="og:image" content="https://christianrios.com/img/profile.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Christian Rios Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Cristian0">
+    <meta name="twitter:title" content="Christian Rios | Senior .NET Web Developer in Panama City">
+    <meta name="twitter:description" content="Senior .NET web developer with 18+ years of experience building web applications. Based in Panama City, Panama.">
+    <meta name="twitter:image" content="https://christianrios.com/img/profile.png">
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Christian Rios",
+        "url": "https://christianrios.com",
+        "image": "https://christianrios.com/img/profile.png",
+        "jobTitle": "Senior .NET Web Developer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Panama City",
+            "addressCountry": "PA"
+        },
+        "sameAs": [
+            "https://github.com/carios23",
+            "https://www.linkedin.com/in/christianrioscartin",
+            "https://twitter.com/Cristian0",
+            "https://www.facebook.com/christianrioscartin",
+            "https://www.youtube.com/@carios23"
+        ],
+        "knowsAbout": ["C#", ".NET Framework", "ASP.NET", "SQL Server", "JavaScript", "Web Development"]
+    }
+    </script>
 </head>
 <body>
 
+    <!-- Skip to main content (accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#hero">CR</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#hero" aria-label="Christian Rios - Home">CR</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-1">
+                <ul class="navbar-nav ms-auto gap-1" role="list">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gaming">Gaming</a></li>
@@ -33,249 +94,450 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="hero">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-7">
-                    <p class="text-accent mb-2 fw-600">Hello, I'm</p>
-                    <h1 class="display-3 fw-bold mb-3">Christian Rios</h1>
-                    <p class="lead text-muted mb-4">Web Developer &middot; .NET Developer &middot; Gamer</p>
-                    <p class="fs-5 text-secondary mb-4">Based in Panama City, Panama. Building web applications with <script>document.write(new Date().getFullYear() - 2007)</script>+ years of experience.</p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#portfolio" class="btn btn-accent btn-lg px-4">View My Work</a>
-                        <a href="#connect" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
-                    </div>
-                    <div class="social-links mt-5">
-                        <a href="https://github.com/carios23" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/Cristian0" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center mt-5 mt-lg-0" id="profilephoto">
-                    <img id="whatever" src="img/profile.png" alt="Christian Rios" class="profile-img">
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="main-content">
 
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <p class="fs-5">Strong <script>document.write(new Date().getFullYear() - 2007)</script> years of experience as a .NET Web Developer. Responsible for design and implementation of features, resolving defects, creating reports and technical documentation for web applications.</p>
-                    <p class="fs-5">Technical management of junior developers. I have been a key resource in several long-term, challenging and time critical projects. My high quality deliverables have secured follow up work from several clients.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h5 class="fw-bold mb-4">Skills & Technologies</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">.NET Framework</span>
-                        <span class="skill-tag">ASP.NET</span>
-                        <span class="skill-tag">VB.NET</span>
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">WCF</span>
-                        <span class="skill-tag">LINQ</span>
-                        <span class="skill-tag">Oracle DB</span>
-                        <span class="skill-tag">PL/SQL</span>
-                        <span class="skill-tag">SSRS</span>
-                        <span class="skill-tag">Crystal Reports</span>
+        <!-- Hero -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-7">
+                        <p class="text-accent mb-2 fw-600" aria-hidden="true">Hello, I'm</p>
+                        <h1 id="hero-heading" class="display-3 fw-bold mb-3">Christian Rios</h1>
+                        <p class="lead mb-4" role="doc-subtitle" style="color: var(--text);">Web Developer &middot; .NET Developer &middot; Unity Developer</p>
+                        <p class="fs-5 mb-4" style="color: var(--text-muted);">Based in Panama City, Panama. Building web applications with <span id="years-exp"></span>+ years of experience.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#portfolio" class="btn btn-accent btn-lg px-4">View My Work</a>
+                            <a href="#connect" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+                        </div>
+                        <div class="social-links mt-5" aria-label="Social media links">
+                            <a href="https://github.com/carios23" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://x.com/Cristian0" target="_blank" rel="noopener noreferrer" aria-label="X profile"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.reddit.com/user/Cristian0" target="_blank" rel="noopener noreferrer" aria-label="Reddit profile"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0" id="profilephoto">
+                        <img id="whatever" src="img/profile.png" alt="Portrait photo of Christian Rios, web developer based in Panama City" class="profile-img" width="280" height="280" loading="eager">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="bg-dark-alt">
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <img src="img/portfolio/cabin.png" class="img-fluid" alt="Gringo in Panama">
-                        <div class="project-overlay">
-                            <h5>Gringo in Panama</h5>
-                            <p>Web Development</p>
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <p class="fs-5">Senior .NET developer with <span id="years-exp-about"></span>+ years of experience building web applications that deliver real business value &mdash; from an admeasurement app that saved the Panama Canal $800K to eCommerce sites that kept businesses running through COVID-19.</p>
+                        <p class="fs-5">I've worked with global organizations like Deloitte, Brink's, and the Panama Canal Authority, and I continue to build software as a freelancer and for U.S.-based clients. I hold a Master's degree in Computer Science from the University of Southern Mississippi.</p>
+                        <div class="about-stats mt-4">
+                            <div class="stat-item">
+                                <span class="stat-number"><span id="years-exp-stat"></span>+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Websites Built</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-4">Skills & Technologies</h3>
+                        <ul class="skills-list d-flex flex-wrap gap-2" aria-label="Technical skills" role="list">
+                            <li class="skill-tag">C#</li>
+                            <li class="skill-tag">.NET Core 10</li>
+                            <li class="skill-tag">ASP.NET MVC</li>
+                            <li class="skill-tag">Blazor</li>
+                            <li class="skill-tag">SQL Server</li>
+                            <li class="skill-tag">JavaScript</li>
+                            <li class="skill-tag">jQuery</li>
+                            <li class="skill-tag">HTML / CSS</li>
+                            <li class="skill-tag">Entity Framework</li>
+                            <li class="skill-tag">Azure DevOps</li>
+                            <li class="skill-tag">GitHub Actions</li>
+                            <li class="skill-tag">CI/CD</li>
+                            <li class="skill-tag">Claude Code</li>
+                            <li class="skill-tag">WPF</li>
+                            <li class="skill-tag">SignalR</li>
+                            <li class="skill-tag">ServiceNow</li>
+                            <li class="skill-tag">Java</li>
+                            <li class="skill-tag">C/C++</li>
+                            <li class="skill-tag">WCF</li>
+                            <li class="skill-tag">LINQ</li>
+                            <li class="skill-tag">PostgreSQL</li>
+                            <li class="skill-tag">Git</li>
+                            <li class="skill-tag">Agile / Scrum</li>
+                            <li class="skill-tag">Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="bg-dark-alt" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading" class="section-title"><i class="fas fa-briefcase me-2" aria-hidden="true"></i>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">.NET Developer</h3>
+                                <span class="timeline-badge">Current</span>
+                            </div>
+                            <p class="timeline-company">Extra Nerds &middot; Self-employed</p>
+                            <p class="timeline-date"><time datetime="2021-03">Mar 2021</time> &ndash; Present &middot; Ohio, United States</p>
+                            <p class="timeline-desc">Developed a Blazor WebAssembly frontend application with a .NET Core backend. Implemented CI/CD pipelines using Azure DevOps for seamless delivery of updates and new features.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Freelance Software Developer</h3>
+                                <span class="timeline-badge">Current</span>
+                            </div>
+                            <p class="timeline-company">Freelance</p>
+                            <p class="timeline-date"><time datetime="2018-01">Jan 2018</time> &ndash; Present &middot; Panama City, Panama</p>
+                            <p class="timeline-desc">Built a classifieds website receiving 100+ daily visits. Created multiple eCommerce websites for clients across various industries. One client said: "You've saved my business from COVID-19."</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ITSM Administrator & JavaScript Developer</h3>
+                            <p class="timeline-company">Brink's Inc</p>
+                            <p class="timeline-date"><time datetime="2017-01">Jan 2017</time> &ndash; <time datetime="2017-11">Nov 2017</time> &middot; Panama City, Panama</p>
+                            <p class="timeline-desc">Developed ServiceNow applications using Bootstrap, JavaScript, and CSS3 to improve efficiency and automation of IT and business operations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Developer</h3>
+                            <p class="timeline-company">Canal de Panama</p>
+                            <p class="timeline-date"><time datetime="2013-02">Feb 2013</time> &ndash; <time datetime="2016-09">Sep 2016</time> &middot; Panama City, Panama</p>
+                            <p class="timeline-desc">Built an admeasurement application that saved $800,000 vs. third-party estimates using WPF and C#. Upgraded payroll and maritime traffic systems for the canal's new locks using ASP.NET MVC and SignalR.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">.NET Developer</h3>
+                            <p class="timeline-company">Deloitte Consulting LLP</p>
+                            <p class="timeline-date"><time datetime="2007-01">Jan 2007</time> &ndash; <time datetime="2012-06">Jun 2012</time> &middot; Greater Hattiesburg Area</p>
+                            <p class="timeline-desc">Part of an Agile + Scrum team developing and maintaining 15+ websites using C#, ASP.NET Web Forms, jQuery, HTML, and CSS. Achieved 100% client satisfaction and delivered all projects on schedule.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Teaching Assistant</h3>
+                            <p class="timeline-company">University of Southern Mississippi</p>
+                            <p class="timeline-date"><time datetime="2004-08">Aug 2004</time> &ndash; <time datetime="2006-12">Dec 2006</time> &middot; Greater Hattiesburg Area</p>
+                            <p class="timeline-desc">Instructed C++ programming classes and laboratories. Conducted research on information retrieval algorithms. Presented a paper on "Emergency Support System for Geographically Dispersed Emergency Responders" at IEMS 2006.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <img src="img/portfolio/cake.png" class="img-fluid" alt="Windows Phone Apps">
-                        <div class="project-overlay">
-                            <h5>Windows Phone Apps</h5>
-                            <p>Mobile Development</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading" class="section-title"><i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>Education</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="education-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Southern_Miss_Golden_Eagles_logo.svg" alt="University of Southern Mississippi logo" class="education-card-logo" width="60" height="60" loading="lazy">
+                            <h3 class="education-card-degree">MS, Computer Science</h3>
+                            <p class="education-card-school">The University of Southern Mississippi</p>
+                            <p class="education-card-date"><time datetime="2004">2004</time> &ndash; <time datetime="2006">2006</time></p>
+                            <p class="education-card-desc">Designed and developed a search engine capable of parsing university websites using information retrieval algorithms. Built a distributed database for emergency data gathering during disasters like Hurricane Katrina.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="education-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Southern_Miss_Golden_Eagles_logo.svg" alt="University of Southern Mississippi logo" class="education-card-logo" width="60" height="60" loading="lazy">
+                            <h3 class="education-card-degree">BS, Computer Science</h3>
+                            <p class="education-card-school">The University of Southern Mississippi</p>
+                            <p class="education-card-date"><time datetime="2000">2000</time> &ndash; <time datetime="2004">2004</time></p>
+                            <p class="education-card-desc">Minor in Mathematics. Active in ACM, Linux Users Group, and 3D Graphics Community. Member of Phi Eta Sigma honor society.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <img src="img/portfolio/circus.png" class="img-fluid" alt="Personal Blog">
-                        <div class="project-overlay">
-                            <h5>Personal Blog</h5>
-                            <p>Writing</p>
-                        </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="bg-dark-alt" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <h2 id="portfolio-heading" class="section-title">Portfolio</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <article class="portfolio-card">
+                            <div class="portfolio-card-browser">
+                                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                                <span class="browser-url">drfabiovega.com</span>
+                            </div>
+                            <div class="portfolio-card-preview">
+                                <iframe src="https://drfabiovega.com" title="Dr. Fabio Vega website preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <h3 class="portfolio-card-title">Dr. Fabio Vega</h3>
+                                <p class="portfolio-card-desc">Professional medical website for an ENT specialist in Panama City. Modern design with appointment booking, service listings, and patient resources.</p>
+                                <div class="portfolio-card-tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <a href="https://drfabiovega.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-3">
+                                    <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i> Visit Site
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="portfolio-card">
+                            <div class="portfolio-card-browser">
+                                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                                <span class="browser-url">dragiselleguevara.com</span>
+                            </div>
+                            <div class="portfolio-card-preview">
+                                <iframe src="https://dragiselleguevara.com" title="Dra. Giselle Guevara website preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <h3 class="portfolio-card-title">Dra. Giselle Guevara</h3>
+                                <p class="portfolio-card-desc">Elegant psychiatry practice website with a calming plum and lavender palette. Features service descriptions, credentials, and contact integration.</p>
+                                <div class="portfolio-card-tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <a href="https://dragiselleguevara.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-3">
+                                    <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i> Visit Site
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="portfolio-card">
+                            <div class="portfolio-card-browser">
+                                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                                <span class="browser-url">chiricados.com</span>
+                            </div>
+                            <div class="portfolio-card-preview">
+                                <iframe src="https://chiricados.com" title="Chiricados classifieds website preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            </div>
+                            <div class="portfolio-card-body">
+                                <h3 class="portfolio-card-title">Chiricados</h3>
+                                <p class="portfolio-card-desc">Free classifieds platform for Chiriqui, Panama. Browse vehicles, real estate, jobs, and more. Built with a clean, category-driven interface.</p>
+                                <div class="portfolio-card-tags">
+                                    <span>Full Stack</span>
+                                    <span>Database</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <a href="https://chiricados.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-3">
+                                    <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i> Visit Site
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Books -->
-    <section id="books">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-book me-2"></i>Favorite Books</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0201835959&asins=0201835959&linkId=df1e10b4605eebf35c670a6286d785f2&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0321466756&asins=0321466756&linkId=7cefc1d1e048ce9a10eee5ed5a58ee55&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0451524934&asins=0451524934&linkId=dcb5f4e5bff2797cf3e2a7e0706d15ef&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=0062315005&asins=0062315005&linkId=84c5118088ba11671d72ebc844c03cbd&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gaming -->
-    <section id="gaming" class="bg-dark-alt">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-gamepad me-2"></i>Currently Playing</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B00M3D8IYM&asins=B00M3D8IYM&linkId=6b6170640f67437aecc4b207a71ccec3&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B00GZ1GUSY&asins=B00GZ1GUSY&linkId=94062f599999968a9d7104a7e18438ee&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B06Y42G518&asins=B06Y42G518&linkId=037c3594fe374d71c8b1b34f4086e8fa&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-                        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=chrisrios-20&marketplace=amazon&region=US&placement=B01K63R7HY&asins=B01K63R7HY&linkId=88f86641bb9f2b73c9e25ec9df4908b1&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connect -->
-    <section id="connect">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p class="fs-5 text-muted mb-5">Find me on any of these platforms</p>
-                    <div class="d-flex justify-content-center gap-4 flex-wrap connect-links">
-                        <a href="https://github.com/carios23" target="_blank" rel="noopener" class="connect-card">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
+        <!-- Books -->
+        <section id="books" aria-labelledby="books-heading">
+            <div class="container">
+                <h2 id="books-heading" class="section-title"><i class="fas fa-book me-2" aria-hidden="true"></i>Favorite Books</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0201835959?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="The Mythical Man-Month by Frederick Brooks on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/0201835959-L.jpg" alt="The Mythical Man-Month book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">The Mythical Man-Month</h3>
+                                <p class="book-card-author">Frederick Brooks</p>
+                            </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener" class="connect-card">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0321466756?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Head First Design Patterns on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780596007126-L.jpg" alt="Head First Design Patterns book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">Head First Design Patterns</h3>
+                                <p class="book-card-author">Eric Freeman</p>
+                            </div>
                         </a>
-                        <a href="https://twitter.com/Cristian0" target="_blank" rel="noopener" class="connect-card">
-                            <i class="fab fa-twitter"></i>
-                            <span>Twitter</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0451524934?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="1984 by George Orwell on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/0451524934-L.jpg" alt="1984 book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">1984</h3>
+                                <p class="book-card-author">George Orwell</p>
+                            </div>
                         </a>
-                        <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener" class="connect-card">
-                            <i class="fab fa-facebook-f"></i>
-                            <span>Facebook</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0062315005?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="The Power of Habit by Charles Duhigg on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/9780812981605-L.jpg" alt="The Power of Habit book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">The Power of Habit</h3>
+                                <p class="book-card-author">Charles Duhigg</p>
+                            </div>
                         </a>
-                        <a href="https://www.youtube.com/@carios23" target="_blank" rel="noopener" class="connect-card">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0988262592?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="The Phoenix Project by Gene Kim on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/9781942788294-L.jpg" alt="The Phoenix Project book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">The Phoenix Project</h3>
+                                <p class="book-card-author">Gene Kim</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="https://www.amazon.com/dp/0671646788?tag=chrisrios-20" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="The Magic of Thinking Big by David Schwartz on Amazon">
+                            <img src="https://covers.openlibrary.org/b/isbn/0671646788-L.jpg" alt="The Magic of Thinking Big book cover" class="book-card-img" width="180" height="270" loading="lazy">
+                            <div class="book-card-body">
+                                <h3 class="book-card-title">The Magic of Thinking Big</h3>
+                                <p class="book-card-author">David Schwartz</p>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Gaming -->
+        <section id="gaming" class="bg-dark-alt" aria-labelledby="gaming-heading">
+            <div class="container">
+                <h2 id="gaming-heading" class="section-title"><i class="fas fa-gamepad me-2" aria-hidden="true"></i>Currently Playing</h2>
+                <p class="text-muted mb-4">Recent activity from my <a href="https://steamcommunity.com/id/Cristian0" target="_blank" rel="noopener noreferrer" class="text-accent">Steam profile</a></p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/2909400" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Final Fantasy VII Rebirth on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2909400/header.jpg" alt="Final Fantasy VII Rebirth game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">Final Fantasy VII Rebirth</h3>
+                                <p class="game-card-meta">2.2 hrs on record</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/1462040" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Final Fantasy VII Remake Intergrade on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg" alt="Final Fantasy VII Remake Intergrade game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">FF VII Remake Intergrade</h3>
+                                <p class="game-card-meta">47 hrs on record</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/22380" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Fallout: New Vegas on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/22380/header.jpg" alt="Fallout: New Vegas game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">Fallout: New Vegas</h3>
+                                <p class="game-card-meta">Steam</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/553850" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="HELLDIVERS 2 on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/553850/header.jpg" alt="HELLDIVERS 2 game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">HELLDIVERS 2</h3>
+                                <p class="game-card-meta">Steam</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/2420110" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Horizon Forbidden West on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2420110/header.jpg" alt="Horizon Forbidden West Complete Edition game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">Horizon Forbidden West</h3>
+                                <p class="game-card-meta">Steam</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://store.steampowered.com/app/2124490" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Silent Hill 2 on Steam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2124490/header.jpg" alt="Silent Hill 2 game artwork" class="game-card-img" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">Silent Hill 2</h3>
+                                <p class="game-card-meta">Steam</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="The Legend of Zelda: Tears of the Kingdom on Nintendo">
+                            <img src="img/zelda-totk.jpg" alt="The Legend of Zelda: Tears of the Kingdom cover art" class="game-card-img game-card-img-cover" width="460" height="215" loading="lazy">
+                            <div class="game-card-body">
+                                <h3 class="game-card-title">Zelda: Tears of the Kingdom</h3>
+                                <p class="game-card-meta">Nintendo Switch</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect -->
+        <section id="connect" aria-labelledby="connect-heading">
+            <div class="container">
+                <h2 id="connect-heading" class="section-title">Let's Connect</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="fs-5 mb-5" style="color: var(--text);">Find me on any of these platforms</p>
+                        <nav class="d-flex justify-content-center gap-4 flex-wrap connect-links" aria-label="Social media profiles">
+                            <a href="https://github.com/carios23" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my GitHub profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/christianrioscartin" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my LinkedIn profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://x.com/Cristian0" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my X profile">
+                                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                                <span>X</span>
+                            </a>
+                            <a href="https://www.facebook.com/christianrioscartin" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my Facebook profile">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.youtube.com/@carios23" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my YouTube channel">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://www.reddit.com/user/Cristian0" target="_blank" rel="noopener noreferrer" class="connect-card" aria-label="Visit my Reddit profile">
+                                <i class="fab fa-reddit-alien" aria-hidden="true"></i>
+                                <span>Reddit</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container text-center">
             <p class="mb-1">Calle 50, Panama City, Panama</p>
-            <p class="mb-0 text-muted">&copy; Christian Rios <script>document.write(new Date().getFullYear())</script></p>
+            <p class="mb-0 text-muted">&copy; <span id="footer-year"></span> Christian Rios. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Modals -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-dark text-light border-0">
-                <div class="modal-body p-5 text-center">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
-                    <img src="img/portfolio/cabin.png" class="img-fluid rounded mb-4" alt="Gringo in Panama">
-                    <h3 class="fw-bold">Gringo in Panama</h3>
-                    <p class="text-muted">A picture blog to showcase what is going on in Panama</p>
-                    <div class="d-flex justify-content-center gap-4 text-muted small">
-                        <span>Client: <strong class="text-light"><a href="https://www.gringoinpanama.com" class="text-accent">Kim Cox</a></strong></span>
-                        <span>Date: <strong class="text-light">April 2013</strong></span>
-                        <span>Service: <strong class="text-light">Web Development</strong></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-dark text-light border-0">
-                <div class="modal-body p-5 text-center">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
-                    <img src="img/portfolio/cake.png" class="img-fluid rounded mb-4" alt="Windows Phone Apps">
-                    <h3 class="fw-bold">Windows Phone Apps</h3>
-                    <p class="text-muted">A collection of several Windows Phone apps that I have developed.</p>
-                    <div class="d-flex justify-content-center gap-4 text-muted small">
-                        <span>Client: <strong class="text-light">WP Apps</strong></span>
-                        <span>Date: <strong class="text-light">April 2014</strong></span>
-                        <span>Service: <strong class="text-light">Mobile Development</strong></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-dark text-light border-0">
-                <div class="modal-body p-5 text-center">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
-                    <img src="img/portfolio/circus.png" class="img-fluid rounded mb-4" alt="Personal Blog">
-                    <h3 class="fw-bold">My Personal Blog</h3>
-                    <p class="text-muted">This is my personal blog where I reflect my opinions and contribute to the world of programming.</p>
-                    <div class="d-flex justify-content-center gap-4 text-muted small">
-                        <span>Client: <strong class="text-light"><a href="https://www.chrisrios.com" class="text-accent">My Blog</a></strong></span>
-                        <span>Date: <strong class="text-light">June 2009</strong></span>
-                        <span>Service: <strong class="text-light">Writing</strong></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/freelancer.js"></script>
