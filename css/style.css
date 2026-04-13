@@ -379,10 +379,9 @@ section {
     border-color: var(--accent);
 }
 
-.education-card-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+.education-card-icon {
+    font-size: 2rem;
+    color: var(--accent);
     margin-bottom: 1rem;
 }
 
