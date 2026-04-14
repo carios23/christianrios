@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de Memoria - Valle de la Luna</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8152195151581989"
+     crossorigin="anonymous"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background: linear-gradient(180deg, #0a1628 0%, #132744 50%, #1a3050 100%);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             font-family: Georgia, serif;
+        }
+        .ad-container {
+            width: 100%;
+            max-width: 536px;
+            margin-top: 12px;
         }
         #name-overlay {
             position: fixed;
@@ -82,6 +90,18 @@
             <br>
             <button id="start-btn">JUGAR</button>
         </div>
+    </div>
+    <div class="ad-container">
+        <!-- memoria -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8152195151581989"
+             data-ad-slot="3860181542"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
     <script src="card-data.js"></script>
