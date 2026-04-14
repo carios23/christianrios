@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria - Valle de la Luna</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(180deg, #0a1628 0%, #132744 50%, #1a3050 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Georgia, serif;
+        }
+        #name-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 22, 40, 0.92);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        #name-overlay.hidden { display: none; }
+        .name-box {
+            background: #132744;
+            border: 2px solid #3a7bd5;
+            border-radius: 12px;
+            padding: 32px 40px;
+            text-align: center;
+            max-width: 360px;
+            width: 90%;
+        }
+        .name-box h1 {
+            color: #5ba3e6;
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+        .name-box p {
+            color: #8ab8d9;
+            font-size: 13px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .name-box input {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 18px;
+            font-family: Georgia, serif;
+            background: #0a1628;
+            border: 1px solid #3a7bd5;
+            border-radius: 8px;
+            color: #c0d8ef;
+            outline: none;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .name-box input::placeholder { color: #4a6a8a; }
+        .name-box input:focus { border-color: #5ba3e6; }
+        .name-box button {
+            padding: 10px 32px;
+            font-size: 18px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            background: #5ba3e6;
+            color: #0a1628;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .name-box button:hover { background: #7bb8f0; }
+    </style>
+</head>
+<body>
+    <div id="name-overlay">
+        <div class="name-box">
+            <h1>JUEGO DE MEMORIA</h1>
+            <p>Valle de la Luna</p>
+            <input type="text" id="player-name" placeholder="Tu nombre" maxlength="20" autofocus>
+            <br>
+            <button id="start-btn">JUGAR</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <script src="card-data.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
